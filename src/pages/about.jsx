@@ -5,8 +5,6 @@ import aboutBackground from '../assets/blogHomeBackground.jpg'
 const AboutComponent = () => {
   return (
 
-    
-    
       <section className='Main' style={{width: "100vw", height: '100vh', backgroundImage: `url(${aboutBackground})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
         <nav className='navMenu' style={{width: '100vw',padding: '50px', display: 'flex', flexDirection: 'row', justifyContent: "space-between",alignItems: 'center', listStyle: 'none'}}>
           <a href=""><h2>my blog</h2></a>
