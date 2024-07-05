@@ -1,4 +1,4 @@
-import AboutComponent from "./pages/about";
+
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <AboutComponent />
+      
     </>
   )
 }
