@@ -1,3 +1,8 @@
 import logo from '../assets/react.svg';
 
-export default logo
+import {dummy_posts} from "../assets/data/datajson";
+
+export default {logo, dummy_posts}
+
+
+

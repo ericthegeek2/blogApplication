@@ -1,11 +1,11 @@
 import React from 'react'
 
-const UserProfile = () => {
+const PostAuthor = () => {
   return (
     <div>
-  
+      
     </div>
   )
 }
 
-export default UserProfile
+export default PostAuthor

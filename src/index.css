@@ -43,7 +43,9 @@ body{
   text-decoration: none;
  }
 
-a:hover{
+
+
+ .nav_menu_list:hover{
   color: black;
   line-height: 4rem;
 }
@@ -109,6 +111,18 @@ section{
 
 }
 
+.btn_primary{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn_category{
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
 
 
 /* ---------Navbar------------*/
@@ -148,5 +162,46 @@ nav{
 
 
 
+/*************************FOOTER********************************/
+
+footer{
+  background-color: var(--color-gray-900);
+  margin-top: 6rem;
+  padding-top: 6rem;
 
 
+}
+
+.footer_categories{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.footer_categories_list{
+  background-color: var(--color-gray-700);
+  color: var(--color-white);
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-2);
+  transition: var(--transition);
+}
+
+.footer_categories a{
+  color: white;
+}
+
+.footer_categories_list :hover{
+  background-color: black;
+  color: orangered;
+ }
+
+
+ .footer_copyright{
+  text-align: center;
+  border-top: 2px solid var(--color-gray-700);
+  padding: 1rem;
+  color: var(--color-white);
+  font-weight: 300;
+ }

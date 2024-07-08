@@ -17,10 +17,10 @@ const Header = () => {
            </Link>
 
            <ul className='nav_menu'>
-             <li><Link to='/profile'>Eric Migwi</Link></li>
-             <li><Link to='/create'>Create post</Link></li>
-             <li><Link to='/authors'>Authors</Link></li>
-             <li><Link to='/logout'>Logout</Link></li>
+             <li className='nav_menu_list'><Link to='/profile/:id' >Eric Migwi</Link></li>
+             <li className='nav_menu_list'><Link to='/create'>Create post</Link></li>
+             <li className='nav_menu_list'><Link to='/authors'>Authors</Link></li>
+             <li className='nav_menu_list'><Link to='/logout'>Logout</Link></li>
 
            </ul>
 
