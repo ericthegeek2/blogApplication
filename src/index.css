@@ -17,6 +17,7 @@
   --color-gray-700: #252542;
   --color-gray-900: #0c0c22;
   --color-cornSilk: cornsilk;
+  --color-black: black;
 
   --color-bg: hwb(240 95 0%);
   --transition: all 300ms ease;
@@ -268,7 +269,7 @@ footer{
  }
 
 
- /**************************post detail ***************************/
+ /**************************post details ***************************/
 
 .post-detail{
   width: var(--form-width);
@@ -304,6 +305,8 @@ footer{
   max-height: 30rem;
   overflow: hidden;
 }
+
+
 .post-detail p{
   margin-bottom: 0.7rem;
 }
