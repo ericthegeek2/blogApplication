@@ -16,6 +16,7 @@
   --color-gray-500: hsl(220, 20%,10%,50%);
   --color-gray-700: #252542;
   --color-gray-900: #0c0c22;
+  --color-cornSilk: cornsilk;
 
   --color-bg: hwb(240 95 0%);
   --transition: all 300ms ease;
@@ -32,7 +33,7 @@
 
 
 body{
-  background-color: var(--color-bg); 
+  background-color: var(--color-cornSilk); 
   font-size: 0.9rem;
   line-height: 1.6;
   color: var(--color-gray-700);
@@ -43,7 +44,9 @@ body{
   text-decoration: none;
  }
 
-a:hover{
+
+
+ .nav_menu_list:hover{
   color: black;
   line-height: 4rem;
 }
@@ -109,6 +112,18 @@ section{
 
 }
 
+.btn_primary{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn_category{
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
 
 
 /* ---------Navbar------------*/
@@ -119,7 +134,7 @@ nav{
   height: 5rem;
   display: grid;
   place-items: center;
-  background: var(255,255,255,0.5);
+  background: rgb(255, 255, 255, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -147,6 +162,151 @@ nav{
 
 
 
+
+/*************************FOOTER********************************/
+
+footer{
+  background-color: var(--color-gray-900);
+  margin-top: 6rem;
+  padding-top: 6rem;
+
+
+}
+
+.footer_categories{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.footer_categories_list{
+  background-color: var(--color-gray-700);
+  color: var(--color-white);
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-2);
+  transition: var(--transition);
+}
+
+.footer_categories a{
+  color: white;
+}
+
+.footer_categories_list :hover{
+  background-color: black;
+  color: orangered;
+ }
+
+
+ .footer_copyright{
+  text-align: center;
+  border-top: 2px solid var(--color-gray-700);
+  padding: 1rem;
+  color: var(--color-white);
+  font-weight: 300;
+ }
+
+
+
+
+ /************************home****************************/
+
+ /************************posts***************************/
+
+ .posts_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+ }
+ .post{
+  background-color: var(--color-white);
+  padding: 1rem;
+  border-radius: var(--radius-4);
+  padding-bottom: 2rem;
+  transition: var(--transition);
+  cursor: default;
+ }
+
+ .post:hover{
+   box-shadow: 0 1.5rem 2rem rgba(0,0,0, 0.1);
+ }
+
+ .post_thumbnail{
+  border-radius: var(--radius-3);
+  overflow: hidden;
+  height: 16rem;
+ }
+
+ .post_content{
+  margin-top: 1.5rem;
+
+ }
+
+ .post_content h3{
+  margin: 1rem 0 0.6rem;
+ }
+
+ .post_footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2rem;
+ }
+
+ .post_author{
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+ }
+
+ .post_author-avatar{
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-2);
+  overflow: hidden;
+ }
+
+
+ /**************************post detail ***************************/
+
+.post-detail{
+  width: var(--form-width);
+  background-color: var(--color-white);
+  margin: 10%;
+  margin-inline: auto;
+  padding: 2rem 0;
+}
+.primary{
+  background-color: rgba(30, 40, 200, 0.8);
+ 
+
+}
+.danger{
+  background-color: rgba(200, 30, 50, 0.8);
+  
+}
+.post-detail_header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.post-detail_buttons{
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.post-detail_thumbnail{
+  margin: 1rem 0;
+  height: fit-content;
+  max-height: 30rem;
+  overflow: hidden;
+}
+.post-detail p{
+  margin-bottom: 0.7rem;
+}
 
 
 

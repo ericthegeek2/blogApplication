@@ -3,7 +3,10 @@ import React from 'react'
 
 
 import {Link} from "react-router-dom";
-import logo from "../index"
+//import {logo, thumbnail1, thumbnail2, thumbnail3, thumbnail4} from "../index"
+
+import logo from "../index";
+
 import {FaBars} from 'react-icons/fa';
 import {AiOutlineClose} from 'react-icons/ai';
 
@@ -17,7 +20,7 @@ const Header = () => {
            </Link>
 
            <ul className='nav_menu'>
-             <li><Link to='/profile'>Eric Migwi</Link></li>
+             <li><Link to='/profile/:id'>Eric Migwi</Link></li>
              <li><Link to='/create'>Create post</Link></li>
              <li><Link to='/authors'>Authors</Link></li>
              <li><Link to='/logout'>Logout</Link></li>
