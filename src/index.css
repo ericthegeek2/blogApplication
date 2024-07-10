@@ -312,5 +312,11 @@ footer{
   margin-bottom: 0.7rem;
 }
 
+.center{
+  text-align: center;
+  margin-inline: center;
+  width: 100%;
+}
+
 
 
