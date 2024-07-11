@@ -1,10 +1,11 @@
 import React from 'react'
+import LoginHelper from '../../components/helperComponents/LoginHelper'
 
 const Login = () => {
   return (
-    <div>
-      <p>login</p>
-    </div>
+    <>
+    <LoginHelper />
+    </>
   )
 }
 

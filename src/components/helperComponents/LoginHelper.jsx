@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 
-import { useSelector, useDispatch } from 'react-redux'
 
 import {Link} from "react-router-dom";
 
@@ -8,15 +7,15 @@ import {setUserdataSlice} from "../../features/feature1/userDataSlice";
 
 
 
-const Registerhelper = () => {
-
-    const dispatch = useDispatch()
+const LoginHelper = () => {
+   
+    
 
     const [useData, setUserData] = useState({
-        name: '',
+       
         email: '',
         password: '',
-        confirmPassword: ''
+        
     })
 
 
@@ -37,32 +36,26 @@ const Registerhelper = () => {
 
     const handleFormSubmit = (e) =>{
         e.preventDefault()
-        const {name,email,password,confirmPassword} = useData
-        dispatch(setUserdataSlice(name)) 
+        const {email,password} = useData
+         
 
     }
 
 
-   
-
-
-    
-
-
   return (
-    <section className='register'>
+    <section className='login'>
         <div className="container">
-            <h2>Sign up</h2>
-            <form className='form register_form' onSubmit={handleFormSubmit}>
+            <h2>Sign In</h2>
+            <form className='form login_form' onSubmit={handleFormSubmit}>
                 <p className='form_error-message'>This is an error message</p>
-                <input type="text" placeholder='full name' name='name' value={useData.name} onChange={changeInputHandler} autoFocus/>
+                
                 <input type="email" placeholder='Email' name='email' value={useData.email} onChange={changeInputHandler}/>
                 <input type="password" placeholder='Password' value={useData.password} onChange={changeInputHandler}/>
-                <input type="password" placeholder='confirm password' value={useData.confirmPassword} onChange={changeInputHandler} />
-                <button type='submit' className='btn primary' onSubmit={e => e.preventDefault}>Register</button>
+                
+                <button type='submit' className='btn primary' onSubmit={e => e.preventDefault}>Login</button>
             </form>
 
-            <small>Already have an account? <Link to='/login'>Sign in</Link></small>
+            <small>Don't have an account? <Link to='/register'>Sign up</Link></small>
             
         </div>
 
@@ -70,4 +63,4 @@ const Registerhelper = () => {
   )
 }
 
-export default Registerhelper
+export default LoginHelper
