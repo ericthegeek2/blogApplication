@@ -10,13 +10,17 @@ import logo from "../index";
 import {FaBars} from 'react-icons/fa';
 import {AiOutlineClose} from 'react-icons/ai';
 
+import {useSelector} from "react-redux";
+
 const Header = () => {
+
+  const userName = useSelector(state => state.userData)
   return (
     
     <nav>
         <div className="container nav_container">
            <Link to='/' className='nav_logo'>
-           <img src={logo} alt="Navbar Logo" />
+           <img src={logo} alt="Navbar Logo" />  
            </Link>
 
            <ul className='nav_menu'>

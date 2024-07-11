@@ -1,10 +1,14 @@
 import React from 'react'
+import Registerhelper from '../../components/helperComponents/Registerhelper'
+
+
 
 const Logout = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <Registerhelper />
+    </>
+    
   )
 }
 
