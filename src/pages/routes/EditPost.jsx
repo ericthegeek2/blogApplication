@@ -1,10 +1,11 @@
 import React from 'react'
+import EditPostHelper from '../../components/helperComponents/EditPostHelper'
 
 const EditPost = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <EditPostHelper />
+    </>
   )
 }
 

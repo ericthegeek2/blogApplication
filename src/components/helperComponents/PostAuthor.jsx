@@ -1,7 +1,9 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 
-import avatar1 from "../index6";
+
+
+import avatar1 from "../../assets/images/avatar1.jpg";
 
 const PostAuthor = ({authorId}) => {
   return (
